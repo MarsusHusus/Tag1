@@ -18,7 +18,7 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-l
 # link
 
-RewriteCond %{REQUEST_URI} !(\.js|\.png|\.jpg|\.jpeg|\.gif|\.xlsx|\.xls)$ [NC]
+RewriteCond %{REQUEST_URI} !(\.css|\.js|\.png|\.jpg|\.jpeg|\.gif|\.xlsx|\.xls)$ [NC]
  
 # Push every request to index.php
 RewriteRule ^(.*)$ index.php [QSA]
