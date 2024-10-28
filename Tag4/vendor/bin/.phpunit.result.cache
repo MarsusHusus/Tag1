@@ -1,0 +1,1 @@
+{"version":1,"defects":[],"times":{"TestCars::testCarClass":0.009,"TestCars::testGetDataReturnsJson":0.002,"TestApp::testIsStatusArray":0.025,"TestApp::testCheckStatusSet":0.006}}

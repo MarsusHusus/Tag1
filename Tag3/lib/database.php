@@ -12,6 +12,8 @@ class database {
       $pass = '';
       $charset = 'utf8mb4';
       $dsn = "mysql:host=$host;dbname=$db;charset=$charset";
+
+      // Wemm database nicht vorhanden soll sie in einer database.swl file erstellt werden
       try {
         $this->pdo = new PDO($dsn, $user, $pass);
       } catch (\PDOException $e) {

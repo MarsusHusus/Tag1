@@ -63,6 +63,7 @@ class cars
         string $createDate,
         int $active
     ): void {
+        
         // SQL statement with all fields
         $sql = "INSERT INTO cars (name, price, kraftstoff, farbe, bauart, tank, jahrgang, createDate, active) 
                 VALUES (:name, :price, :kraftstoff, :farbe, :bauart, :tank, :jahrgang, :createDate, :active)";
