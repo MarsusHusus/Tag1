@@ -1,7 +1,7 @@
 <?php 
 namespace lib;
 use PDO;
-
+ 
 class database {
     private PDO $pdo;
     private $stmt;
@@ -18,7 +18,7 @@ class database {
         echo "Datenbank verbindung $e";
       }
     }
-
+ 
     public function executeQuerry($sql, $data) {
         try {
             $this->stmt = $this->pdo->prepare($sql);
@@ -29,10 +29,8 @@ class database {
             throw new \PDOException($e->getMessage(), (int)$e->getCode());
         }
     }
-   public function __destrcut() {
-        //$this->pdo = ;
-    }
-
+ 
+ 
     function executeQuery($sql, $data)
     {
         try {
